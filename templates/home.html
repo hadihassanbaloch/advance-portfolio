@@ -14,16 +14,13 @@
       <div class='portfolio-container'>
         <div class='portfolio-row header-wrap'>
           <div class='brand-name'>
-            <a href='#' class='logo'>Hadi</a>
+            <a href='#' class='logo'>Hadi Hassan</a>
           </div>
           <!--Header navbar start-->
           <div class='portfolio-navbar'>
             <ul>
               <li>
-                <a href="#home" class="navbar-links">Home</a>
-              </li>
-              <li>
-                <a href="#about" class="navbar-links">About</a>
+                <a href="#about" class="navbar-links active-link">Home</a>
               </li>
               <li>
                 <a href="#resume" class="navbar-links">Resume</a>
@@ -43,6 +40,10 @@
           <div class="navbar-toggle">
             <i class="lni lni-grid-alt"></i>
           </div>
+          <button type="button" class="theme-toggle">
+              <i class="lni lni-night"></i>
+              <i class="lni lni-sun"></i>
+          </button>
         </div>                                        
       </div>
     </header>
@@ -58,7 +59,7 @@
                 It's Hadi
               </h1>
               <h3>Python & ML Developer</h3>
-              <p>Hey do you need a developer to solve your <strong>ML or Python problems?</strong> lets shake hands with me. </p>
+              <p>Hey do you need a programmer to solve your <strong>ML or Python problems?</strong> lets shake hands with me. </p>
             </div>
           </div>
           <div class="about-image">
@@ -77,7 +78,7 @@
             <h2><strong>About Me</strong></h2>
             <div class="resume-text">
               <p>
-                I am a highly skilled software developer with expertise in Python programming. With (2 years) of experience in developing and implementing cutting-edge solutions, I have a strong background in Django, Pandas, Numpy, Machine Learning, Deep Learning, TensorFlow and Computer Vision. I have a passion for delivering high-quality work and have consistently exceeded expectations on previous projects. I am confident in my ability to effectively handle complex projects and provide innovative solutions. Let's work together to bring your vision to life.
+                With expertise spanning Python, machine learning, data science, and web development, I am a seasoned programmer dedicated to pushing the boundaries of innovation. Leveraging two years of experience, I thrive on unraveling complex challenges and delivering impactful solutions.<br>My skill set extends to web scraping, where I extract valuable insights from diverse data sources. Through meticulous attention to detail and continuous learning, I craft robust algorithms to fuel data-driven decision-making.<br>Driven by a passion for learning and a commitment to excellence, I am poised to make a transformative impact in the realm of cloud computing with AWS. Let's collaborate to shape the future of technology together.
               </p>
             </div>
             <div class="hello-btn">
@@ -265,11 +266,11 @@
           </div>
           <div class="service-card">
             <div class="icon">
-              <i class="lni lni-figma"></i>
+              <i class="lni lni-stats-up"></i>
             </div>
             <div class="service-content">
-              <h6>Figma</h6>
-              <p>Transform your design process with Figma, a collaborative interface design tool that enables seamless teamwork, real-time collaboration, and prototyping for creating stunning user experiences across web, mobile, and more.</p>
+              <h6>Data Science</h6>
+              <p>Unlock the potential of your data with our comprehensive data science services, leveraging advanced analytics and machine learning techniques to drive actionable insights, informed decision-making, and strategic growth for your business.</p>
             </div>
           </div>
           <div class="service-card">
@@ -294,10 +295,10 @@
             <strong>Recent Works</strong>
           </h2>
           <!---project filter nav begins--->
-          <div class="projects-filter-nav">
+          <div class="portfolio-filter-nav">
             <button class="btn active" data-id="all" type='button'>All</button>
-            <button class="btn active" data-id="ml" type='button'>ML</button>
-            <button class="btn active" data-id="python" type='button'>Python</button>
+            <button class="btn" data-id="ml" type='button'>Ml</button>
+            <button class="btn" data-id="python" type='button'>Python</button>
           </div>
           <!---project filter nav ends--->
         </div>
@@ -356,6 +357,104 @@
     </section>
     <!--- Project Section Ends--->
     
+    <!----Contact Section Begins---->
+    
+    <secton id="contact">
+      <div class="portfolio-container">
+        <!--- General contact info start---->
+        <div class="contact-general">
+          <h2>
+            <strong>Get In Touch</strong>
+          </h2>
+          <div class="contact-card">
+            <div class="icon">
+              <i class="lni lni-map-marker"></i>
+            </div>
+            <div class="contact-content">
+              <h5>Location</h5>
+              <span>Jhang, Punjab, Pakistan</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon">
+              <i class="lni lni-phone"></i>
+            </div>
+            <div class="contact-content">
+              <h5>Phone</h5>
+              <span>(+92) 304 554 9200</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon">
+              <i class="lni lni-envelope"></i>
+            </div>
+            <div class="contact-content">
+              <h5>Email</h5>
+              <span>12hadihassan@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <!--- General contact info ends---->
+      </div>
+      <div class="portfolio-container">
+          <h2 style="text-align: center;"><strong>Contact Me</strong></h2>
+          <div class="portfolio-row">
+              <!------ Main Contact Form Begins ------->
+              <form id="contact-form" method="POST" action="#">
+                  <div class="portfolio-row">
+                      <div class="name-email">
+                          <div class="input-wrapper">
+                              <label for="name">Name</label>
+                              <input type="text" class="input-control" name="name" placeholder="Enter your name">
+                          </div>
+                          <div class="input-wrapper">
+                              <label for="email">Email</label>
+                              <input type="email" class="input-control" name="email" placeholder="Enter your email">
+                          </div>
+                      </div>
+                      <div class="input-subject">
+                          <label for="subject">Subject</label>
+                          <input type="text" class="input-control" name="subject" placeholder="Enter your subject">
+                      </div>
+                      <div class="input-subject">
+                          <label for="message">Message</label>
+                          <textarea name="message" class="contact-msg" rows="9" placeholder="Your Message"></textarea>
+                      </div>
+                  </div>
+                  <div class="form-submit">
+                      <button type="submit" class="btn-submit">Submit</button>
+                      <div class="loader">
+                          <i class="lni lni-spinner-solid"></i>
+                      </div>
+                      <div class="form-message"></div>
+                  </div>
+              </form>
+              <!------- Main Contact Form Ends -------->
+          </div>
+      </div>
+    </secton>
+    <!----Contact Section Ends---->
+    <!----Footer Section Begins---->
+    <footer>
+      <div class="portfolio-container">
+        <div class="portfolio-row footer-wrap">
+          <div class="copyright-text">
+            <p> © Copyright 2024 by <strong>Hadi Hassan</strong></p>
+          </div>
+          <ul class="social-icons">
+            <li><a href="https://web.facebook.com/hadi.hassan.9693/">Facebook</a></li>
+            <li><a href="#">Github</a></li>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!----Footer Section ends---->
+    
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <script src="{{ url_for('static', filename='script.js') }}">
     </script>
   </body>
