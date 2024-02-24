@@ -848,9 +848,15 @@ footer {
   }
   
   /* =========== Project Gallery responsive ===========*/
-  .portfolio-wrapper {
+  .portfolio-wrapper .portfolio-col {
+    display: flex;
     flex-direction: row;
-
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  .portfolio-item{
+    width: 340px;
   }
   /* =========== general contact responsive ===========*/
   .contact-general {
