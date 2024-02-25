@@ -214,6 +214,7 @@ header .portfolio-row.header-wrap {
 }
 
 .about-content {
+  display: flex;
   align-items: center;
 }
 .about-intro {
@@ -221,11 +222,16 @@ header .portfolio-row.header-wrap {
   width: 300;
   order: 2;
   text-align: center;
+  flex: 1;
 }
 .about-text h3{
   color: var(--color1);
   margin-bottom: 10px;
 }
+.about-text p{
+  line-height: 1.8;
+}
+
 h1 strong,
 h2 strong {
     background-image: linear-gradient(to right, #977ec7 0%, #f987d6 100%);
@@ -234,36 +240,28 @@ h2 strong {
     background-clip: text;
 }
 /*----style for about image----*/
-.about-image{
-  width: 100%;
-  order: 1;
-  position: relative;
-  z-index: 2;
-  transition: 0.4s;
-  curson: pointer;
-}
-.about-image::before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background-image: linear-gradient(11deg, #6ec1e4 0%, #54595f 100%);
-    z-index: -1;
-    transition: all .5s ease-in-out;
-    border-radius: 100% 73% 100% 72% / 99% 86% 75% 63%;
-    box-shadow: 2px 10px 0px 0px rgba(216, 19, 19, 0.16);
-}
+.about-image {
+    background-image: url(images/artflow2.png);
+    display: flex;
+    height: 380px;
+    width: 380px;
 
-.about-image:hover {
-    transform: translateY(-10.5px);
+    position: relative;
+    z-index: 2;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px ;
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.3);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
 }
-
-.about-image img {
-    border-radius: 100% 73% 100% 72% / 99% 86% 75% 63%;
-}
-
-.about-image:hover::before {
-    filter: drop-shadow(0 0 30px rgba(130, 237, 255, 0.97));
+@keyframes animate{
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
 }
 /*======Style for resume section==========*/
 
@@ -278,6 +276,7 @@ h2 strong {
 }
 .resume-text{
   margin-top: 18px;
+  line-height: 1.6;
 }
 
 /*---- hello button ----*/
@@ -441,6 +440,7 @@ h2 strong {
   grid-template-rows: repeat(1, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+  line-height: 1.5;
 } 
 .service-card {
   background: var(--bg-color2);
