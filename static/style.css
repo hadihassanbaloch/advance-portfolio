@@ -121,6 +121,7 @@ body.dark .theme-toggle .lni-night {
 .portfolio-navbar ul li a.active-link {
     font-weight: 800;
 }
+
 /*======== CSS Header Stick To Top =========*/
 
 header.header-sticky {
@@ -142,6 +143,7 @@ header.header-sticky {
 .header-sticky .portfolio-navbar ul li a {
     color: #343434;
 }
+
 /* ===== Wrapper ======= */
 .portfolio-container{
   max-width: 1070px;
@@ -167,11 +169,13 @@ header .portfolio-row.header-wrap {
   justify-content: space-between;
   align-content:  center;
 }
+
 .brand-name a{
   font-size: 1.25rem;
   font-weight:  800;
   color: var(--color1);
 }
+
 .portfolio-navbar {
   display: none;
 }
@@ -217,6 +221,7 @@ header .portfolio-row.header-wrap {
   display: flex;
   align-items: center;
 }
+
 .about-intro {
   margin: 3rem;
   width: 300;
@@ -224,10 +229,12 @@ header .portfolio-row.header-wrap {
   text-align: center;
   flex: 1;
 }
+
 .about-text h3{
   color: var(--color1);
   margin-bottom: 10px;
 }
+
 .about-text p{
   line-height: 1.8;
 }
@@ -241,7 +248,7 @@ h2 strong {
 }
 /*----style for about image----*/
 .about-image {
-    background-image: url(images/artflow2.png);
+    background-image: url(images/new1.jpg);
     display: flex;
     height: 380px;
     width: 380px;
